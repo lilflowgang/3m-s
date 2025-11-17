@@ -1,0 +1,149 @@
+/* Root color scheme */
+:root {
+  --accent: #83450f;
+  --bg: #eb7c0e;
+  --text: #090dee;
+}
+
+/* General body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: url("images/cafe_bg5.jpg") no-repeat center center fixed;
+  background-size: cover;  /* makes it fill the screen */
+  color: var(--text);
+}
+
+
+/* Container */
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+}
+
+/* Header */
+.site-header {
+  background: rgba(221, 136, 8, 0);
+  padding: 12px 0px;
+  border-bottom: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2.0rem;
+  display: flex;
+  align-items: center;
+}
+.site-header img.logo {
+  height: 100px;
+  margin-right: 10px;
+}
+.site-header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+.site-header nav a:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  background: rgba(255, 255, 255, 0.068);
+  padding: 12px;
+  border-top: 2px solid var(--accent);
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3.0rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: rgba(10, 5, 0, 0.89) !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #c74e4ee0;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 12px;
+}
+.form-control {
+  padding: 10px;
+  width: 50%;
+  border: 5px solid #f1a90ee5;
+  border-radius: 10px;
+}
+
+/* Cards */
+.card {
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  background: #ffffff00;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Products */
+.product {
+  display: flex;
+  align-items: center;
+  background: #ffffff17;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.product img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.menu-category {
+    font-size: 28px;
+    margin: 30px 0 10px;
+    text-align: left;
+    color: #ffcc00;
+    border-bottom: 5px solid #e4c1c1;
+    padding-bottom: 10px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
